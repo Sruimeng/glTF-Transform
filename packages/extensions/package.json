@@ -34,7 +34,7 @@
     "threejs"
   ],
   "dependencies": {
-    "@sruimeng/gltf-core": "1.0.0",
+    "@sruimeng/gltf-core": "^1.0.0",
     "ktx-parse": "^1.0.0"
   },
   "files": [
