@@ -4,9 +4,8 @@
   "repository": "github:Sruimeng/glTF-Transform",
   "homepage": "https://gltf-transform.dev/",
   "description": "Syncs a glTF-Transform Document with a three.js scene graph",
-  "author": "Don McCurdy <dm@donmccurdy.com>",
+  "author": "Sruimeng",
   "license": "BlueOak-1.0.0",
-  "funding": "https://github.com/sponsors/donmccurdy",
   "type": "module",
   "sideEffects": false,
   "exports": {
@@ -41,5 +40,7 @@
     "@types/three": ">=0.155.0",
     "three": ">=0.155.0"
   },
-  "gitHead": "895b70777fda68aa321358d17dab2105e8564d08"
+  "publishConfig": {
+    "access": "public"
+  }
 }
