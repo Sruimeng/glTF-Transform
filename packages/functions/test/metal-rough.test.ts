@@ -1,15 +1,15 @@
 import ndarray from 'ndarray';
 import { savePixels, getPixels } from 'ndarray-pixels';
 import test from 'ava';
-import { Document } from '@gltf-transform/core';
+import { Document } from '@sruimeng/gltf-core';
 import {
 	IOR,
 	KHRMaterialsIOR,
 	KHRMaterialsPBRSpecularGlossiness,
 	KHRMaterialsSpecular,
 	Specular,
-} from '@gltf-transform/extensions';
-import { metalRough } from '@gltf-transform/functions';
+} from '@sruimeng/gltf-extensions';
+import { metalRough } from '@sruimeng/gltf-functions';
 
 const ZEROS = ndarray(new Uint8Array([0, 0, 0, 0]), [1, 1, 4]);
 

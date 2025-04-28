@@ -1,7 +1,7 @@
 import test from 'ava';
-import { Document } from '@gltf-transform/core';
-import { listTextureSlots } from '@gltf-transform/functions';
-import { KHRMaterialsSheen } from '@gltf-transform/extensions';
+import { Document } from '@sruimeng/gltf-core';
+import { listTextureSlots } from '@sruimeng/gltf-functions';
+import { KHRMaterialsSheen } from '@sruimeng/gltf-extensions';
 
 test('basic', (t) => {
 	const document = new Document();

@@ -1,6 +1,6 @@
 import test from 'ava';
-import { Accessor, Document, Primitive } from '@gltf-transform/core';
-import { unweld } from '@gltf-transform/functions';
+import { Accessor, Document, Primitive } from '@sruimeng/gltf-core';
+import { unweld } from '@sruimeng/gltf-functions';
 
 test('basic', async (t) => {
 	const doc = new Document();

@@ -1,9 +1,9 @@
 import fs from 'fs/promises';
 import test from 'ava';
-import { Document, TextureChannel, vec2 } from '@gltf-transform/core';
-import { KHRMaterialsClearcoat } from '@gltf-transform/extensions';
-import { Mode, mockCommandExists, mockSpawn, toktx, mockWaitExit } from '@gltf-transform/cli';
-import { logger } from '@gltf-transform/test-utils';
+import { Document, TextureChannel, vec2 } from '@sruimeng/gltf-core';
+import { KHRMaterialsClearcoat } from '@sruimeng/gltf-extensions';
+import { Mode, mockCommandExists, mockSpawn, toktx, mockWaitExit } from '@sruimeng/gltf-cli';
+import { logger } from '@sruimeng/gltf-test-utils';
 import type { ChildProcess } from 'child_process';
 import ndarray from 'ndarray';
 import { savePixels } from 'ndarray-pixels';

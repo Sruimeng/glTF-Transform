@@ -1,8 +1,8 @@
 import test from 'ava';
-import { Accessor, Document, Primitive, PropertyType } from '@gltf-transform/core';
-import { KHRMaterialsUnlit } from '@gltf-transform/extensions';
-import { prune } from '@gltf-transform/functions';
-import { logger } from '@gltf-transform/test-utils';
+import { Accessor, Document, Primitive, PropertyType } from '@sruimeng/gltf-core';
+import { KHRMaterialsUnlit } from '@sruimeng/gltf-extensions';
+import { prune } from '@sruimeng/gltf-functions';
+import { logger } from '@sruimeng/gltf-test-utils';
 import ndarray from 'ndarray';
 import { savePixels } from 'ndarray-pixels';
 

@@ -1,6 +1,6 @@
 import test from 'ava';
-import { Accessor, Document, getBounds } from '@gltf-transform/core';
-import { center } from '@gltf-transform/functions';
+import { Accessor, Document, getBounds } from '@sruimeng/gltf-core';
+import { center } from '@sruimeng/gltf-functions';
 
 test('basic', async (t) => {
 	const doc = new Document();

@@ -1,8 +1,8 @@
 import test from 'ava';
 import { JSDOM } from 'jsdom';
-import { Document, Primitive as PrimitiveDef } from '@gltf-transform/core';
-import { DocumentView, NullImageProvider } from '@gltf-transform/view';
-import { KHRMaterialsClearcoat, KHRMaterialsUnlit } from '@gltf-transform/extensions';
+import { Document, Primitive as PrimitiveDef } from '@sruimeng/gltf-core';
+import { DocumentView, NullImageProvider } from '@sruimeng/gltf-view';
+import { KHRMaterialsClearcoat, KHRMaterialsUnlit } from '@sruimeng/gltf-extensions';
 import {
 	BufferGeometry,
 	LineBasicMaterial,

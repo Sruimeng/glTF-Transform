@@ -1,7 +1,7 @@
 import test from 'ava';
-import { Accessor, Document, Primitive } from '@gltf-transform/core';
-import { joinPrimitives } from '@gltf-transform/functions';
-import { logger } from '@gltf-transform/test-utils';
+import { Accessor, Document, Primitive } from '@sruimeng/gltf-core';
+import { joinPrimitives } from '@sruimeng/gltf-functions';
+import { logger } from '@sruimeng/gltf-test-utils';
 
 test('unindexed', async (t) => {
 	const document = new Document().setLogger(logger);

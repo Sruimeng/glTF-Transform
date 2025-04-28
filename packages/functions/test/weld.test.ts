@@ -1,9 +1,9 @@
 import test from 'ava';
 import fs from 'fs/promises';
 import path, { dirname } from 'path';
-import { Accessor, Document, GLTF, Primitive, getBounds } from '@gltf-transform/core';
-import { weld } from '@gltf-transform/functions';
-import { logger } from '@gltf-transform/test-utils';
+import { Accessor, Document, GLTF, Primitive, getBounds } from '@sruimeng/gltf-core';
+import { weld } from '@sruimeng/gltf-functions';
+import { logger } from '@sruimeng/gltf-test-utils';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));

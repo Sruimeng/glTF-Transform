@@ -1,5 +1,5 @@
 import test from 'ava';
-import { Document } from '@gltf-transform/core';
+import { Document } from '@sruimeng/gltf-core';
 
 test('transform', async (t) => {
 	const document = new Document();

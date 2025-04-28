@@ -2,9 +2,9 @@ import fs from 'fs';
 import path, { dirname } from 'path';
 import { KHR_DF_PRIMARIES_BT709, KHR_DF_PRIMARIES_UNSPECIFIED, read } from 'ktx-parse';
 import test from 'ava';
-import { Document, Texture } from '@gltf-transform/core';
-import { ktxfix } from '@gltf-transform/cli';
-import { logger } from '@gltf-transform/test-utils';
+import { Document, Texture } from '@sruimeng/gltf-core';
+import { ktxfix } from '@sruimeng/gltf-cli';
+import { logger } from '@sruimeng/gltf-test-utils';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));

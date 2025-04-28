@@ -1,7 +1,7 @@
 import test from 'ava';
 import { JSDOM } from 'jsdom';
-import { Document } from '@gltf-transform/core';
-import { DocumentView, NullImageProvider } from '@gltf-transform/view';
+import { Document } from '@sruimeng/gltf-core';
+import { DocumentView, NullImageProvider } from '@sruimeng/gltf-view';
 import { BufferGeometry, Group, Mesh, MeshStandardMaterial, Texture } from 'three';
 
 global.document = new JSDOM().window.document;

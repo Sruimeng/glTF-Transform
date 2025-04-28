@@ -1,6 +1,6 @@
 import test from 'ava';
-import { Document, GLTF, ImageUtils, JSONDocument, NodeIO } from '@gltf-transform/core';
-import { KHRTextureBasisu } from '@gltf-transform/extensions';
+import { Document, GLTF, ImageUtils, JSONDocument, NodeIO } from '@sruimeng/gltf-core';
+import { KHRTextureBasisu } from '@sruimeng/gltf-extensions';
 import fs from 'fs';
 import path from 'path';
 

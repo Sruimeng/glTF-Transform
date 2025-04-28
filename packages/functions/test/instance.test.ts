@@ -1,8 +1,8 @@
 import test from 'ava';
-import { Document } from '@gltf-transform/core';
-import { InstancedMesh, EXTMeshGPUInstancing } from '@gltf-transform/extensions';
-import { instance } from '@gltf-transform/functions';
-import { logger, createTorusKnotPrimitive } from '@gltf-transform/test-utils';
+import { Document } from '@sruimeng/gltf-core';
+import { InstancedMesh, EXTMeshGPUInstancing } from '@sruimeng/gltf-extensions';
+import { instance } from '@sruimeng/gltf-functions';
+import { logger, createTorusKnotPrimitive } from '@sruimeng/gltf-test-utils';
 
 test('translation', async (t) => {
 	const doc = new Document().setLogger(logger);

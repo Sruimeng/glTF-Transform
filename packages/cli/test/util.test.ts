@@ -1,5 +1,5 @@
 import test from 'ava';
-import { formatBytes, formatHeader, formatParagraph } from '@gltf-transform/cli';
+import { formatBytes, formatHeader, formatParagraph } from '@sruimeng/gltf-cli';
 
 const HEADER = `
  HELLO

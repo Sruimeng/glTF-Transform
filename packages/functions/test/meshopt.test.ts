@@ -1,7 +1,7 @@
 import test from 'ava';
-import { Document } from '@gltf-transform/core';
-import { meshopt } from '@gltf-transform/functions';
-import { createTorusKnotPrimitive, logger } from '@gltf-transform/test-utils';
+import { Document } from '@sruimeng/gltf-core';
+import { meshopt } from '@sruimeng/gltf-functions';
+import { createTorusKnotPrimitive, logger } from '@sruimeng/gltf-test-utils';
 import { MeshoptEncoder } from 'meshoptimizer';
 
 test('basic', async (t) => {

@@ -1,8 +1,8 @@
 import test from 'ava';
 import { JSDOM } from 'jsdom';
-import { Document } from '@gltf-transform/core';
-import { Light as LightDef, KHRLightsPunctual } from '@gltf-transform/extensions';
-import { DocumentView, NullImageProvider } from '@gltf-transform/view';
+import { Document } from '@sruimeng/gltf-core';
+import { Light as LightDef, KHRLightsPunctual } from '@sruimeng/gltf-extensions';
+import { DocumentView, NullImageProvider } from '@sruimeng/gltf-view';
 import { DirectionalLight, PointLight, SpotLight } from 'three';
 
 global.document = new JSDOM().window.document;

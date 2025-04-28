@@ -1,7 +1,7 @@
 import test from 'ava';
 import { JSDOM } from 'jsdom';
-import { Document, Node } from '@gltf-transform/core';
-import { DocumentView, NullImageProvider } from '@gltf-transform/view';
+import { Document, Node } from '@sruimeng/gltf-core';
+import { DocumentView, NullImageProvider } from '@sruimeng/gltf-view';
 
 global.document = new JSDOM().window.document;
 const imageProvider = new NullImageProvider();

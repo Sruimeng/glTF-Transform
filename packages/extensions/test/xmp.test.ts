@@ -1,7 +1,7 @@
 import test from 'ava';
-import { Document, NodeIO } from '@gltf-transform/core';
-import { Packet, KHRXMP } from '@gltf-transform/extensions';
-import { cloneDocument } from '@gltf-transform/functions';
+import { Document, NodeIO } from '@sruimeng/gltf-core';
+import { Packet, KHRXMP } from '@sruimeng/gltf-extensions';
+import { cloneDocument } from '@sruimeng/gltf-functions';
 
 const MOCK_CONTEXT_URL = 'https://test.example/1.0/';
 

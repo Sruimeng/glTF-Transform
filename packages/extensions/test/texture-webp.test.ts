@@ -1,6 +1,6 @@
 import test from 'ava';
-import { BufferUtils, Document, GLTF, ImageUtils, JSONDocument, NodeIO } from '@gltf-transform/core';
-import { EXTTextureWebP } from '@gltf-transform/extensions';
+import { BufferUtils, Document, GLTF, ImageUtils, JSONDocument, NodeIO } from '@sruimeng/gltf-core';
+import { EXTTextureWebP } from '@sruimeng/gltf-extensions';
 import path, { dirname } from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';

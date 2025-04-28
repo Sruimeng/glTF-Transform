@@ -1,7 +1,7 @@
 import test from 'ava';
-import { Document, NodeIO } from '@gltf-transform/core';
-import { KHRMaterialsSpecular, Specular } from '@gltf-transform/extensions';
-import { cloneDocument } from '@gltf-transform/functions';
+import { Document, NodeIO } from '@sruimeng/gltf-core';
+import { KHRMaterialsSpecular, Specular } from '@sruimeng/gltf-extensions';
+import { cloneDocument } from '@sruimeng/gltf-functions';
 
 const WRITER_OPTIONS = { basename: 'extensionTest' };
 

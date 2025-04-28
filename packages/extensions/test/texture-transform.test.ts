@@ -1,8 +1,8 @@
 import test from 'ava';
-import { Document, NodeIO } from '@gltf-transform/core';
-import { Clearcoat, KHRMaterialsClearcoat, KHRTextureTransform, Transform } from '@gltf-transform/extensions';
-import { cloneDocument } from '@gltf-transform/functions';
-import { logger } from '@gltf-transform/test-utils';
+import { Document, NodeIO } from '@sruimeng/gltf-core';
+import { Clearcoat, KHRMaterialsClearcoat, KHRTextureTransform, Transform } from '@sruimeng/gltf-extensions';
+import { cloneDocument } from '@sruimeng/gltf-functions';
+import { logger } from '@sruimeng/gltf-test-utils';
 
 const WRITER_OPTIONS = { basename: 'extensionTest' };
 

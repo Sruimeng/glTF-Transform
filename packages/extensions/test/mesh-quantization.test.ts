@@ -1,7 +1,7 @@
 import test from 'ava';
-import { Document, JSONDocument, NodeIO } from '@gltf-transform/core';
-import { KHRMeshQuantization } from '@gltf-transform/extensions';
-import { cloneDocument } from '@gltf-transform/functions';
+import { Document, JSONDocument, NodeIO } from '@sruimeng/gltf-core';
+import { KHRMeshQuantization } from '@sruimeng/gltf-extensions';
+import { cloneDocument } from '@sruimeng/gltf-functions';
 
 const WRITER_OPTIONS = { basename: 'extensionTest' };
 

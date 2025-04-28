@@ -1,7 +1,7 @@
 import test from 'ava';
 import path, { dirname } from 'path';
-import { getBounds, Document, NodeIO, Primitive } from '@gltf-transform/core';
-import { KHRDracoMeshCompression, KHRMeshQuantization } from '@gltf-transform/extensions';
+import { getBounds, Document, NodeIO, Primitive } from '@sruimeng/gltf-core';
+import { KHRDracoMeshCompression, KHRMeshQuantization } from '@sruimeng/gltf-extensions';
 import {
 	weld,
 	unweld,
@@ -10,7 +10,7 @@ import {
 	VertexCountMethod,
 	simplifyPrimitive,
 	getGLPrimitiveCount,
-} from '@gltf-transform/functions';
+} from '@sruimeng/gltf-functions';
 import {
 	logger,
 	roundBbox,
@@ -18,7 +18,7 @@ import {
 	createLineLoopPrim,
 	createTriangleFanPrim,
 	createTriangleStripPrim,
-} from '@gltf-transform/test-utils';
+} from '@sruimeng/gltf-test-utils';
 import { MeshoptSimplifier } from 'meshoptimizer';
 import draco3d from 'draco3dgltf';
 import { fileURLToPath } from 'url';

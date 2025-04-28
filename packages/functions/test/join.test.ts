@@ -1,6 +1,6 @@
 import test from 'ava';
-import { getBounds, Document, Primitive } from '@gltf-transform/core';
-import { join, quantize, transformPrimitive } from '@gltf-transform/functions';
+import { getBounds, Document, Primitive } from '@sruimeng/gltf-core';
+import { join, quantize, transformPrimitive } from '@sruimeng/gltf-functions';
 import {
 	createLineLoopPrim,
 	createLineStripPrim,
@@ -10,7 +10,7 @@ import {
 	logger,
 	roundBbox,
 	mat4,
-} from '@gltf-transform/test-utils';
+} from '@sruimeng/gltf-test-utils';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 

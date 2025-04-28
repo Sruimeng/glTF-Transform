@@ -11,10 +11,10 @@ import {
 	PrimitiveTarget,
 	Scene,
 	vec3,
-} from '@gltf-transform/core';
-import { EXTMeshGPUInstancing, KHRMaterialsVolume, Volume } from '@gltf-transform/extensions';
-import { quantize } from '@gltf-transform/functions';
-import { logger, round, roundBbox } from '@gltf-transform/test-utils';
+} from '@sruimeng/gltf-core';
+import { EXTMeshGPUInstancing, KHRMaterialsVolume, Volume } from '@sruimeng/gltf-extensions';
+import { quantize } from '@sruimeng/gltf-functions';
+import { logger, round, roundBbox } from '@sruimeng/gltf-test-utils';
 
 test('noop', async (t) => {
 	const document = new Document().setLogger(logger);

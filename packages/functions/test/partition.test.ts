@@ -1,8 +1,8 @@
 import path from 'path';
 import test from 'ava';
-import { Document, NodeIO } from '@gltf-transform/core';
-import { partition } from '@gltf-transform/functions';
-import { createTorusKnotPrimitive, logger } from '@gltf-transform/test-utils';
+import { Document, NodeIO } from '@sruimeng/gltf-core';
+import { partition } from '@sruimeng/gltf-functions';
+import { createTorusKnotPrimitive, logger } from '@sruimeng/gltf-test-utils';
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 

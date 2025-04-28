@@ -1,13 +1,13 @@
 import test from 'ava';
-import { Document, Primitive } from '@gltf-transform/core';
-import { convertPrimitiveToLines, convertPrimitiveToTriangles } from '@gltf-transform/functions';
+import { Document, Primitive } from '@sruimeng/gltf-core';
+import { convertPrimitiveToLines, convertPrimitiveToTriangles } from '@sruimeng/gltf-functions';
 import {
 	logger,
 	createLineStripPrim,
 	createLineLoopPrim,
 	createTriangleStripPrim,
 	createTriangleFanPrim,
-} from '@gltf-transform/test-utils';
+} from '@sruimeng/gltf-test-utils';
 
 const { POINTS, LINES, LINE_STRIP, LINE_LOOP, TRIANGLES, TRIANGLE_STRIP, TRIANGLE_FAN } = Primitive.Mode;
 

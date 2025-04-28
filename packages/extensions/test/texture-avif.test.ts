@@ -1,6 +1,6 @@
 import test from 'ava';
-import { Document, GLTF, ImageUtils, JSONDocument, NodeIO } from '@gltf-transform/core';
-import { EXTTextureAVIF } from '@gltf-transform/extensions';
+import { Document, GLTF, ImageUtils, JSONDocument, NodeIO } from '@sruimeng/gltf-core';
+import { EXTTextureAVIF } from '@sruimeng/gltf-extensions';
 import path, { dirname } from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';

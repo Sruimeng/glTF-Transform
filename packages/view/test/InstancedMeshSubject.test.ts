@@ -1,8 +1,8 @@
 import test from 'ava';
 import { JSDOM } from 'jsdom';
-import { Document } from '@gltf-transform/core';
-import { EXTMeshGPUInstancing } from '@gltf-transform/extensions';
-import { DocumentView, NullImageProvider } from '@gltf-transform/view';
+import { Document } from '@sruimeng/gltf-core';
+import { EXTMeshGPUInstancing } from '@sruimeng/gltf-extensions';
+import { DocumentView, NullImageProvider } from '@sruimeng/gltf-view';
 import { Group, InstancedMesh, Object3D } from 'three';
 
 global.document = new JSDOM().window.document;

@@ -1,7 +1,7 @@
 import test from 'ava';
-import { Document } from '@gltf-transform/core';
-import { listTextureInfo, listTextureInfoByMaterial } from '@gltf-transform/functions';
-import { KHRMaterialsSheen, KHRMaterialsVolume } from '@gltf-transform/extensions';
+import { Document } from '@sruimeng/gltf-core';
+import { listTextureInfo, listTextureInfoByMaterial } from '@sruimeng/gltf-functions';
+import { KHRMaterialsSheen, KHRMaterialsVolume } from '@sruimeng/gltf-extensions';
 
 test('listTextureInfo', (t) => {
 	const document = new Document();
