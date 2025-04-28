@@ -35,8 +35,11 @@ export function transformMesh(mesh: Mesh, matrix: mat4): void {
 
 	// Isolate vertex streams, remove unused vertices, and transform.
 	for (const prim of mesh.listPrimitives()) {
-		compactPrimitive(prim);
-		transformPrimitive(prim, matrix);
+		const compactedPrim = compactPrimitive(prim);
+		if (!compactedPrim) {
+			throw new Error('Failed to compact primitive');
+		}
+		transformPrimitive(compactedPrim, matrix);
 	}
 }
 

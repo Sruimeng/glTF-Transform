@@ -99,7 +99,10 @@ export function createInstanceNodes(batchNode: Node): Node[] {
 	const semantics = batch.listSemantics();
 	if (semantics.length === 0) return [];
 
-	const document = Document.fromGraph(batchNode.getGraph())!;
+	const document = Document.fromGraph(batchNode.getGraph());
+	if (!document) {
+		throw new Error('Failed to get document from graph');
+	}
 	const instanceCount = batch.listAttributes()[0].getCount();
 	const instanceCountDigits = String(instanceCount).length;
 	const mesh = batchNode.getMesh();

@@ -82,11 +82,17 @@ export function reorder(_options: ReorderOptions): Transform {
 			);
 
 			const dstIndices = shallowCloneAccessor(document, srcIndices);
+			if (!dstIndices) {
+				throw new Error('Failed to clone accessor');
+			}
 			dstIndices.setArray(unique <= 65534 ? new Uint16Array(indicesArray) : indicesArray);
 
 			// Update affected primitives.
 			for (const srcAttribute of plan.indicesToAttributes.get(srcIndices)) {
 				const dstAttribute = shallowCloneAccessor(document, srcAttribute);
+				if (!dstAttribute) {
+					throw new Error('Failed to clone accessor');
+				}
 				compactAttribute(srcAttribute, srcIndices, remap, dstAttribute, unique);
 
 				for (const prim of plan.indicesToPrimitives.get(srcIndices)) {

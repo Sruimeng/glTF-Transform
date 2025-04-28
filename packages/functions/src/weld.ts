@@ -150,7 +150,10 @@ export function weld(_options: WeldOptions = WELD_DEFAULTS): Transform {
  */
 export function weldPrimitive(prim: Primitive, _options: WeldOptions = WELD_DEFAULTS): void {
 	const graph = prim.getGraph();
-	const document = Document.fromGraph(graph)!;
+	const document = Document.fromGraph(graph);
+	if (!document) {
+		throw new Error('Failed to get document from graph');
+	}
 	const logger = document.getLogger();
 	const options = { ...WELD_DEFAULTS, ..._options };
 

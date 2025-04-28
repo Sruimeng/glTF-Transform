@@ -158,6 +158,8 @@ export class DocumentViewImpl implements DocumentViewSubjectAPI {
 			default: {
 				if (def instanceof ExtensionPropertyDef) {
 					subject = new ExtensionSubject(this, def as ExtensionPropertyDef);
+				} else if (def.propertyType === 'Unlit' || def.propertyType === 'Clearcoat') {
+					subject = new ExtensionSubject(this, def as ExtensionPropertyDef);
 				} else {
 					throw new Error(`Unimplemented type: ${def.propertyType}`);
 				}

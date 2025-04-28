@@ -46,7 +46,10 @@ import { EMPTY_U32 } from './hash-table.js';
 // export function compactPrimitive(prim: Primitive): Primitive;
 // export function compactPrimitive(prim: Primitive, remap: TypedArray, dstVertexCount: number): Primitive;
 export function compactPrimitive(prim: Primitive, remap?: TypedArray, dstVertexCount?: number): Primitive {
-	const document = Document.fromGraph(prim.getGraph())!;
+	const document = Document.fromGraph(prim.getGraph());
+	if (!document) {
+		throw new Error('Failed to get document from graph');
+	}
 
 	if (!remap || !dstVertexCount) {
 		[remap, dstVertexCount] = createCompactPlan(prim);

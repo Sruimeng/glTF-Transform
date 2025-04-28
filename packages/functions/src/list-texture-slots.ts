@@ -11,7 +11,10 @@ import { Document, Texture } from '@gltf-transform/core';
  * ```
  */
 export function listTextureSlots(texture: Texture): string[] {
-	const document = Document.fromGraph(texture.getGraph())!;
+	const document = Document.fromGraph(texture.getGraph());
+	if (!document) {
+		throw new Error('Failed to get document from graph');
+	}
 	const root = document.getRoot();
 	const slots = texture
 		.getGraph()

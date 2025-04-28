@@ -41,7 +41,10 @@ export function unweldPrimitive(prim: Primitive, visited = new Map<Accessor, Map
 	if (!indices) return;
 
 	const graph = prim.getGraph();
-	const document = Document.fromGraph(graph)!;
+	const document = Document.fromGraph(graph);
+	if (!document) {
+		throw new Error('Failed to get document from graph');
+	}
 	const logger = document.getLogger();
 
 	const srcVertexCount = prim.getAttribute('POSITION')!.getCount();

@@ -151,7 +151,10 @@ export function simplifyPrimitive(prim: Primitive, _options: SimplifyOptions): P
 	const options = { ...SIMPLIFY_DEFAULTS, ..._options } as Required<SimplifyOptions>;
 	const simplifier = options.simplifier as typeof MeshoptSimplifier;
 	const graph = prim.getGraph();
-	const document = Document.fromGraph(graph)!;
+	const document = Document.fromGraph(graph);
+	if (!document) {
+		throw new Error('Failed to get document from graph');
+	}
 	const logger = document.getLogger();
 
 	switch (prim.getMode()) {

@@ -159,13 +159,18 @@ export function textureCompress(_options: TextureCompressOptions): Transform {
 
 		await Promise.all(
 			textures.map(async (texture, textureIndex) => {
-				const slots = listTextureSlots(texture);
-				const channels = getTextureChannelMask(texture);
 				const textureLabel =
 					texture.getURI() ||
 					texture.getName() ||
 					`${textureIndex + 1}/${document.getRoot().listTextures().length}`;
 				const prefix = `${NAME}(${textureLabel})`;
+
+				const slots = listTextureSlots(texture);
+				if (!slots) {
+					logger.warn(`${prefix}: Skipping, failed to get texture slots.`);
+					return;
+				}
+				const channels = getTextureChannelMask(texture);
 
 				// FILTER: Exclude textures that don't match (a) 'slots' or (b) expected formats.
 
